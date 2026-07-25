@@ -1009,3 +1009,116 @@ html{
     }
 
 }
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .header{
+        padding:15px 5%;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+        padding:120px 5% 50px;
+    }
+
+    .home-content h1{
+        font-size:48px;
+    }
+
+    .home-content h3{
+        font-size:24px;
+    }
+
+    .home-img img{
+        width:280px;
+        height:280px;
+    }
+
+    .btn-box{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .stats{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-info{
+        grid-template-columns:1fr;
+    }
+
+    .skills-container,
+    .projects-container,
+    .certificate-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}
+
+/* Mobile Menu */
+
+@media (max-width:768px){
+
+    .menu-btn{
+        display:block;
+        z-index:1001;
+    }
+
+    .navbar{
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:#0f172a;
+
+        display:none;
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:20px 0;
+
+    }
+
+    .navbar.active{
+
+        display:flex;
+
+    }
+
+    .navbar a{
+
+        padding:15px 0;
+
+        display:block;
+
+    }
+
+}
